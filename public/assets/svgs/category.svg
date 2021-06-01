@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg9"
+   version="1.1"
+   viewBox="0 0 128 128"
+   height="128pt"
+   width="128pt"
+   sodipodi:docname="category.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1016"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="1.3828125"
+     inkscape:cx="85.333333"
+     inkscape:cy="85.333333"
+     inkscape:window-x="1920"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <g
+     style="fill:#b3b3b3"
+     id="#18acd9ff">
+    <path
+       style="fill:#b3b3b3"
+       id="path2"
+       d=" M 32.01 32.39 C 41.02 32.42 50.04 32.35 59.05 32.42 C 59.09 41.43 59.06 50.43 59.07 59.43 C 50.05 59.50 41.03 59.44 32.00 59.46 C 32.00 50.44 31.99 41.41 32.01 32.39 Z"
+       opacity="1.00"
+       fill="#18acd9" />
+    <path
+       style="fill:#b3b3b3"
+       id="path4"
+       d=" M 62.08 44.27 C 68.19 44.29 74.29 44.27 80.40 44.28 C 80.41 51.40 80.42 58.52 80.40 65.64 C 75.64 65.66 70.88 65.65 66.13 65.65 C 66.11 70.91 66.13 76.17 66.11 81.43 C 58.49 81.42 50.86 81.54 43.23 81.36 C 43.33 75.06 43.25 68.75 43.28 62.45 C 49.55 62.42 55.81 62.48 62.07 62.41 C 62.08 56.36 62.07 50.32 62.08 44.27 Z"
+       opacity="1.00"
+       fill="#18acd9" />
+    <path
+       style="fill:#b3b3b3"
+       id="path6"
+       d=" M 68.90 68.38 C 77.93 68.36 86.96 68.38 95.99 68.37 C 96.01 77.53 96.00 86.69 96.00 95.85 C 86.96 95.85 77.93 95.85 68.89 95.85 C 68.89 86.69 68.88 77.54 68.90 68.38 Z"
+       opacity="1.00"
+       fill="#18acd9" />
+  </g>
+</svg>
