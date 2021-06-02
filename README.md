@@ -1,12 +1,13 @@
 <p align="center">
-    <a href="https://boemia.artizanatweb.ro" target="_blank">
+    <a href="https://webapp.artizanatweb.ro/admin" target="_blank">
         <img src="https://artizanatweb.ro/assets/svgs/webapp-logo.svg" width="400">
     </a>
 </p>
 
 ## WEBAPP Example
 <p>
-    Laravel 8 with React.js 17 web application example.
+    Laravel 8 with React.js 17 web application example.<br />
+    The Laravel app uses Repository design pattern, API Resource and Form Request Validation.
 </p>
 <p>
     The <b>ReactJS</b> application can be found in <b>/resources/admin/</b>.<br />
