@@ -7,7 +7,7 @@
 ## WEBAPP Example
 <p>
     Laravel 8 with React.js 17 web application example.<br />
-    The Laravel app uses Repository design pattern, API Resource and Form Request Validation.
+    The Laravel app uses Repository design pattern, API Resource, Form Request Validation and pivot table.
 </p>
 <p>
     The <b>ReactJS</b> application can be found in <b>/resources/admin/</b>.<br />
