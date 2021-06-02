@@ -163,7 +163,6 @@ function* loginSuccessSaga() {
     // success message
     yield call(showSuccessMessage, `Hello ${AuthUser.name}, Welcome Back!`);
 
-    yield delay(500);
     yield put(storeActions.showLoginForm(false));
     yield delay(500);
     yield put(storeActions.riseAppLogo(false));
@@ -172,7 +171,7 @@ function* loginSuccessSaga() {
     // hide login screen
     yield put(storeActions.openLoginScreen(false));
 
-    yield delay(1000);
+    yield delay(500);
     yield put(storeActions.hideMainMessage());
 }
 

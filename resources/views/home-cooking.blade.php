@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 header">
-                        <h6>BOEMIA Kitchen experts:</h6>
+                        <h6>Kitchen experts:</h6>
                         <p>A properly designed kitchen can help you lead a healthy life.</p>
                     </div>
                 </div>

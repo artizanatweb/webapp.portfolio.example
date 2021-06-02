@@ -159,7 +159,7 @@ function* categoryActionReceived(isError, responseObject, actionType = "create")
     }
     yield put(storeActions.setMainMessage('success', successMessage));
     yield put(storeActions.categorySaved(true));
-    yield delay(1000);
+    yield delay(500);
     yield put(storeActions.categorySaving(false));
     yield put(storeActions.categoriesActionScreen());
 

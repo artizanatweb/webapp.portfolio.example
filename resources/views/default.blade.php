@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 center">
-                        <h5>Digital marketing campaign ideas for BOEMIA FURNITURE</h5>
+                        <h5>Digital marketing campaign ideas for FURNITURE</h5>
                         <p>Piggyback on the following trends that emerged because of the COVID pandemic:</p>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Home cooking</span>
-                                <p>BOEMIA Kitchens are designed for healthy cooking and social interaction.</p>
+                                <p>Kitchens are designed for healthy cooking and social interaction.</p>
                             </div>
                         </div>
                         <div class="card grey lighten-5 campaignCard">
@@ -29,7 +29,7 @@
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Work from home</span>
-                                <p>BOEMIA Kitchens are designed as "Working Kitchen".</p>
+                                <p>Kitchens are designed as "Working Kitchen".</p>
                             </div>
                         </div>
                         <div class="card grey lighten-5 campaignCard">
@@ -39,7 +39,7 @@
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Smart Kitchen</span>
-                                <p>BOEMIA Kitchens are designed to make better use of any space using the latest technologies.</p>
+                                <p>Kitchens are designed to make better use of any space using the latest technologies.</p>
                             </div>
                         </div>
                     </div>

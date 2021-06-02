@@ -1,4 +1,4 @@
-import { put, call, delay } from "redux-saga/effects";
+import { put, delay } from "redux-saga/effects";
 import * as storeActions from "./../actions";
 import axios from "./../../utils/axios";
 import { getProductDefaultImage } from "./../../utils/utils";
@@ -64,7 +64,6 @@ export function* requestPageContent(action) {
         return yield put(storeActions.setProducts(responseData?.data));
     }
 
-    yield delay(1000);
     if ("product" === page.code) {
         console.log('here product data!');
         const defaultImage = getProductDefaultImage(responseData.data);

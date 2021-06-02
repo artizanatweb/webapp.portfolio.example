@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 header">
-                        <h6>BOEMIA Kitchen experts:</h6>
+                        <h6>Kitchen experts:</h6>
                         <p>As remote work is here to stay, a well designed kitchen can serve many purposes.</p>
                     </div>
                 </div>
