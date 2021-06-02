@@ -1,62 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://boemia.artizanatweb.ro" target="_blank">
+        <img src="https://artizanatweb.ro/assets/svgs/webapp-logo.svg" width="400">
+    </a>
 </p>
 
-## About Laravel
+## WEBAPP Example
+<p>
+    Laravel 8 with React.js 17 web application example.
+</p>
+<p>
+    The <b>ReactJS</b> application can be found in <b>/resources/admin/</b>.<br />
+    It serves as an example to show that I am accustomed with both programming styles: <b>functional based components</b> with <b>hooks</b> and <b>class based components</b>.<br />
+    Global state is managed by <b>Redux</b> and can be found in <b>/resources/admin/js/stores/</b>.
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Installation
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Create database:
+<pre>
+mysql> create database webappexample;
+</pre>
+<br />
+Copy file .env.example to .env
+<pre>
+$ cp .env.example .env
+</pre>
+and edit .env file based on your settings: <br />
+- database: DB_USERNAME, DB_PASSWORD <br />
+- main user: <b>ADMIN_CREDENTIALS_EMAIL</b>; <b>ADMIN_CREDENTIALS_PASSWD</b> <br />
+<br />
+<br />
+Copy the virtual host file from /debian/ to your apache directory.
+<pre>
+$ cp -fr debian/webapp.portfolio.localhost.conf /etc/apache2/sites-available/
+</pre>
+Change file /etc/apache2/sites-available/webapp.portfolio.localhost.conf with your paths.<br />
+<br />
+Activate the virtual host and reload apache:
+<pre>
+$ sudo a2ensite webapp.portfolio.localhost.conf
+$ sudo systemctl reload apache2
+</pre> 
+Apache <b>mod_rewrite</b> must be enabled ($ sudo a2enmod rewrite)
+<br />
+<br />
+Add the following line to your <b>/etc/hosts</b>:
+<pre>
+127.0.1.1	webapp.portfolio.localhost
+</pre>
+<br />
+Install dependencies using composer:
+<pre>
+$ composer install
+</pre>
+<br />
+Run DB migration:
+<pre>
+$ php artisan migrate
+</pre>
+<br />
+Create a Password Grant Client:
+<pre>
+$ php artisan passport:client --password
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ What should we name the password grant client? [WEBAPP-Portfolio-Example Password Grant Client]:
+ > password
 
-## Learning Laravel
+ Which user provider should this client use to retrieve users? [users]:
+  [0] users
+ > 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Password grant client created successfully.
+</pre>
+Edit .env with the generated ID and secret:
+<pre>
+MIX_ADMIN_CLIENT_ID=---Client ID-here---
+MIX_ADMIN_CLIENT_SECRET="---Client secret-here---"
+</pre>
+<br />
+Install front-end dependencies:
+<pre>
+$ npm install
+</pre>
+<br />
+Generate a production build:
+<pre>
+$ npm run prod
+</pre>

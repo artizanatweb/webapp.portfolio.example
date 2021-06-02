@@ -15,14 +15,6 @@ const path = require('path');
 mix.js('resources/admin/js/app.js', 'public/dist/admin/js')
     .react()
     .sass('resources/admin/sass/app.scss', 'public/dist/admin/css')
-    // .webpackConfig({
-    //     output: { chunkFilename: 'dist/admin/js/[name].js?id=[chunkhash]' },
-    //     resolve: {
-    //         alias: {
-    //             '@': path.resolve('resources/admin/js'),
-    //         },
-    //     },
-    // })
     .version();
 
 // autoprefixer: start value has mixed support, consider using flex-start instead
@@ -36,4 +28,4 @@ mix.babelConfig({
     plugins: ['@babel/plugin-syntax-dynamic-import'],
 });
 
-mix.browserSync('boemia.promotion.localhost');
+mix.browserSync('webapp.portfolio.localhost');
