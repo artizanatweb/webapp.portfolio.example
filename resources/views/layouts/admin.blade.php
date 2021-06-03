@@ -28,8 +28,8 @@
         </main>
         @yield('loader')
         <!-- Styles -->
-        <link href="{{ asset('dist/admin/css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('dist/admin/css/app.css') }}" rel="stylesheet">
         <!-- Scripts -->
-        <script src="{{ asset('dist/admin/js/app.js') }}" defer></script>
+        <script src="{{ mix('dist/admin/js/app.js') }}" defer></script>
     </body>
 </html>
