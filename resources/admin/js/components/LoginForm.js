@@ -87,8 +87,9 @@ const LoginForm = (props) => {
             opacity: 0,
         },
         exit: {
-            opacity: 0,
+            // opacity: 0,
             height: 0,
+            transition: { duration: 0.3, ease: "easeOut" }
         }
     };
 
