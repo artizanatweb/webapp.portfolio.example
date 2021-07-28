@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://webapp.artizanatweb.ro/admin" target="_blank">
+    <a href="https://www.artizanatweb.ro" target="_blank">
         <img src="https://artizanatweb.ro/assets/svgs/webapp-logo.svg" width="400">
     </a>
 </p>
