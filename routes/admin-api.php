@@ -9,8 +9,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 
 Route::middleware('auth:admin')->group(function () {
-    Route::get('/auth/user', [AuthController::class, 'user']);
     Route::middleware('admin-api')->group(function () {
+        Route::get('/auth/user', [AuthController::class, 'user']);
         Route::get('/dashboard', [DashboardController::class, 'index']);
         Route::apiResources([
             'campaigns' => CampaignController::class,
